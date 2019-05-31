@@ -1,44 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
     android:orientation="vertical"
-    android:gravity="center"
+    android:background="@drawable/back"
     tools:context=".RegisterActivity">
 
-    <ImageView
-        android:id="@+id/imgPhoto"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:scaleType="fitCenter"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_photo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="50dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"/>
 
     <EditText
-        android:id="@+id/etUserName"
+        android:id="@+id/etFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_margin="20dp"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/etLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:layout_margin="20dp"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="USer name"/>
+        android:hint="Username"
+        android:textSize="30dp"/>
 
     <EditText
-        android:id="@+id/etPass"
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:layout_margin="20dp"
+        android:textSize="30dp"
         android:hint="Password"/>
+
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Register"/>
-
-
-
-
+        android:text="Register"
+        android:textSize="30dp"/>
 
 </LinearLayout>

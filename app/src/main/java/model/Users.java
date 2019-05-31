@@ -1,22 +1,52 @@
 package model;
 
 public class Users {
-    private  String _id;
-    private  String username;
-    private  String password;
+    private String userFname, userLname, username, password;
 
-    public Users(String username, String password) {
+    private boolean success;
+    private String status;
 
+    public String getUserLname() {
+        return userLname;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Users(String userFname, String userLname, String username, String password) {
+        this.userFname = userFname;
+        this.userLname = userLname;
         this.username = username;
         this.password = password;
     }
 
-    public String get_id() {
-        return _id;
+    public String getUserFname() {
+        return userFname;
     }
 
-    public void set_id(String _id) {
-        this._id = _id;
+    public void setUserFname(String userFname) {
+        this.userFname = userFname;
+    }
+
+    public String getUsernLname() {
+        return userLname;
+    }
+
+    public void setUserLname(String userLname) {
+        this.userLname = userLname;
     }
 
     public String getUsername() {

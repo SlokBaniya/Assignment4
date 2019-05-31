@@ -4,7 +4,9 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Url {
-    public static final String BASE_URL="http://10.0.2.2:8000/api/";
+    public static final String BASE_URL="http://10.0.2.2:3000/";
+
+    public static String Cookie = "";
 
     public static Retrofit getInstance(){
         Retrofit retrofit = new Retrofit.Builder()
@@ -13,4 +15,5 @@ public class Url {
                 .build();
         return retrofit;
     }
+
 }
